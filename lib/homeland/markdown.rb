@@ -32,7 +32,7 @@ module Homeland
 
         这是一篇讲解如何正确使用 **Markdown** 的排版示例，学会这个很有必要，能让你的文章有更佳清晰的排版。
 
-        > 引用文本：Markdown is a text formatting syntax inspired
+        > 引用文本：以无法为有法，以无限为有限，是为武术最高境界！
 
         ## 语法指导
 
@@ -44,7 +44,7 @@ module Homeland
         - *倾斜* - `*倾斜*`
         - ~~删除线~~ - `~~删除线~~`
         - `Code 标记` - `\`Code 标记\``
-        - [超级链接](http://github.com) - `[超级链接](http://github.com)`
+        - [超级链接](http://ftghub.com) - `[超级链接](http://ftghub.com)`
         - [username@gmail.com](mailto:username@gmail.com) - `[username@gmail.com](mailto:username@gmail.com)`
 
         ### 提及用户
@@ -84,72 +84,27 @@ module Homeland
         ![设置图片高度](http://image-path.png =x200)
         ```
 
-        ### 代码块
-
-        #### 普通
-
-        ```
-        *emphasize*    **strong**
-        _emphasize_    __strong__
-        @a = 1
-        ```
-
-        #### 语法高亮支持
-
-        如果在 \`\`\` 后面更随语言名称，可以有语法高亮的效果哦，比如:
-
-        ##### 演示 Ruby 代码高亮
-
-        ```ruby
-        class PostController < ApplicationController
-          def index
-            @posts = Post.last_actived.limit(10)
-          end
-        end
-        ```
-
-        ##### 演示 Rails View 高亮
-
-        ```erb
-        <%= @posts.each do |post| %>
-        <div class="post"></div>
-        <% end %>
-        ```
-
-        ##### 演示 YAML 文件
-
-        ```yml
-        zh-CN:
-          name: 姓名
-          age: 年龄
-        ```
-
-        > Tip: 语言名称支持下面这些: `ruby`, `python`, `js`, `html`, `erb`, `css`, `coffee`, `bash`, `json`, `yml`, `xml` ...
-
         ### 有序、无序列表
 
         #### 无序列表
 
-        - Ruby
-          - Rails
-            - ActiveRecord
-        - Go
-          - Gofmt
-          - Revel
-        - Node.js
-          - Koa
-          - Express
+        - 内家拳
+          - 太极拳
+            - 杨氏太极拳
+        - 外家拳
+          - 少林拳
+          - 八极拳
 
         #### 有序列表
 
-        1. Node.js
-          1. Express
-          2. Koa
-          3. Sails
-        2. Ruby
-          1. Rails
-          2. Sinatra
-        3. Go
+        1. 太极拳
+          1. 陈氏太极拳
+          2. 杨氏太极拳
+          3. 吴氏太极拳
+        2. 空手道
+          1. 极真流
+          2. 松涛流
+        3. 泰拳
 
         ### 表格
 

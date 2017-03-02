@@ -7,6 +7,6 @@
         li << link_to(plugin.display_name, plugin.root_path) if Setting.has_module?(plugin.name)
       end
     end %>
-    <%= raw Setting.navbar_html %>
+    <%#= raw Setting.navbar_html %>
   </ul>
 </div>

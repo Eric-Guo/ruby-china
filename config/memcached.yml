@@ -1,6 +1,6 @@
 defaults: &defaults
-  host: 127.0.0.1:11211
-  namespace: rb-1
+  host: 127.0.0.1:11213
+  namespace: rb-3
   compress: true
 
 development:

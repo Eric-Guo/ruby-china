@@ -30,4 +30,8 @@ class HomeController < ApplicationController
 
   def markdown
   end
+
+  def invite
+    
+  end
 end

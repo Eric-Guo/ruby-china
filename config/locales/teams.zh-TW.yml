@@ -8,8 +8,8 @@
   teams:
     teams: '團體'
     user_existed: '已經該團體成員'
-    new_team: '創建公司／團體'
-    edit_team: '設置公司／團體资料'
+    new_team: '創建團體'
+    edit_team: '設置團體资料'
     new_team_user: '邀請成員'
     edit_team_user: '修改成員权限'
     delete_team_user: '移除成員'

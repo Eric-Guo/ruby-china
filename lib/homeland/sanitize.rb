@@ -23,6 +23,10 @@ module Homeland
         valid_video_url = true
       end
 
+      if node["src"].match?(%r{\A(?:https?:)?//(?:v\.)?qq(?:-nocookie)?\.com/embed/})
+        valid_video_url = true
+      end
+
       # Vimeo
       if node["src"].match?(%r{\Ahttps://player\.vimeo\.com/video/})
         valid_video_url = true

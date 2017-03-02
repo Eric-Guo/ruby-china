@@ -1,5 +1,48 @@
-Homeland
+Homeland For FTGHub
 --------
+
+## Running sidekiq
+
+```bash
+bundle exec sidekiq -C config/sidekiq.yml RAILS_ENV=development
+```
+
+## Export the DB
+
+```bash
+pg_dump -d ftghub_prod -f ftghub_prod_db.psql
+zip ftghub_prod_db.zip ftghub_prod_db.psql
+```
+
+## Import the staging DB
+
+```bash
+scp deploy@ftghub.com:ftghub_prod_db.zip .
+unzip ftghub_prod_db.zip
+sed -i -- 's/[[:<:]]deploy[[:>:]]/guochunzhong/g' ftghub_prod_db.psql
+psql -d postgres
+DROP DATABASE ftghub_dev;
+CREATE DATABASE ftghub_dev WITH ENCODING='UTF8' OWNER='guochunzhong';
+\q
+psql -d ftghub_dev -f ftghub_prod_db.psql
+```
+
+## Delete elasticsearch index
+
+```bash
+curl -XDELETE 'localhost:9200/ftghub_users?pretty&pretty'
+curl -XDELETE 'localhost:9200/ftghub_topics?pretty&pretty'
+curl -XDELETE 'localhost:9200/ftghub_pages?pretty&pretty'
+curl -XGET 'localhost:9200/_cat/indices?v&pretty' 
+```
+
+## Rebuild elasticsearch index
+
+```bash
+rake environment elasticsearch:import:model CLASS=Page FORCE=y RAILS_ENV=production
+rake environment elasticsearch:import:model CLASS=Topic FORCE=y RAILS_ENV=production
+rake environment elasticsearch:import:model CLASS=User FORCE=y RAILS_ENV=production
+```
 
 ![](https://gethomeland.com/images/text-logo.svg)
 

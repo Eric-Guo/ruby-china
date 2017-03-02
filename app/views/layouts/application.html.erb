@@ -1,26 +1,25 @@
 <!--
-   _   _                      _                 _
-  | | | |                    | |               | |
-  | |_| | ___  _ __ ___   ___| | __ _ _ __   __| |
-  |  _  |/ _ \| '_ ` _ \ / _ \ |/ _` | '_ \ / _` |
-  | | | | (_) | | | | | |  __/ | (_| | | | | (_| |
-  \_| |_/\___/|_| |_| |_|\___|_|\__,_|_| |_|\__,_|
-  ------------------------------------------------
-                          https://gethomeland.com
+  ______ _______ _____ _    _ _    _ ____
+ |  ____|__   __/ ____| |  | | |  | |  _ \
+ | |__     | | | |  __| |__| | |  | | |_) |
+ |  __|    | | | | |_ |  __  | |  | |  _ <
+ | |       | | | |__| | |  | | |__| | |_) |
+ |_|       |_|  \_____|_|  |_|\____/|____/
 
-  - Ruby:  <%= RUBY_VERSION %><%= "-p#{RUBY_PATCHLEVEL}" if defined? RUBY_PATCHLEVEL %>
-  - Rails: <%= Rails.version %>
-  - Homeland: <%= Homeland.version %>
+ Fighting Technology Group Hub
 -->
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset='utf-8' />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <title><%= content_for?(:title) ? yield(:title) : Setting.app_name %></title>
+  <link rel="icon" href="<%= asset_path('icon_logo.png') %>" />
   <meta name="apple-mobile-web-app-capable" content="no">
   <meta content='True' name='HandheldFriendly' />
   <link rel="alternate" type="application/rss+xml" title="订阅最新帖" href="<%= main_app.feed_topics_url %>" />
+  <link rel="mask-icon" href="<%= asset_path("big_logo.png") %>"/>
   <%= stylesheet_link_tag "front", 'data-turbolinks-track': "reload" %>
   <%= stylesheet_link_tag "turbolinks-app", 'data-turbolinks-track': 'reload' if turbolinks_app? %>
   <%= yield :stylesheets %>

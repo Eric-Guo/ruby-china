@@ -6,7 +6,7 @@
       li << link_to(icon_tag('qrcode', label: '打赏'), reward_setting_path)
       li << link_to(icon_tag('gear', label: '账户设置'), account_setting_path, class: 'hide-ios')
       li << link_to(icon_tag('keyboard-o', label: '登陆密码'), password_setting_path, class: 'hide-ios') unless Setting.sso_enabled?
-      li << link_to(icon_tag('cube', label: t("users.manage_my_apps")), oauth_applications_path, class: 'hide-ios')
+      # li << link_to(icon_tag('cube', label: t("users.manage_my_apps")), oauth_applications_path, class: 'hide-ios')
     end %>
   </div>
 </div>

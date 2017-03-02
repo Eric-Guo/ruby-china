@@ -8,8 +8,8 @@
   teams:
     teams: '组织'
     user_existed: '已经在组里面了'
-    new_team: '创建公司／组织'
-    edit_team: '设置公司／组织资料'
+    new_team: '创建组织'
+    edit_team: '设置组织资料'
     new_team_user: '邀请成员'
     edit_team_user: '修改成员权限'
     delete_team_user: '移除成员'

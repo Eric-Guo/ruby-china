@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   if Setting.has_module?(:home)
     root to: 'home#index'
+    get 'invite' => 'home#invite', as: 'invite'
   else
     root to: 'topics#index'
   end

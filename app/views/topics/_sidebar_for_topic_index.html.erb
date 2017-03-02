@@ -13,9 +13,9 @@
 </div>
 <% end %>
 
-<%= render "topics/sidebar_box_tips" %>
-
 <%= raw Setting.topic_index_sidebar_html %>
+
+<%= render "topics/sidebar_box_tips" %>
 
 <% cache(["sidebar_statistics",Time.now.strftime("%Y-%m-%d %H")]) do %>
 <div class="panel panel-default">
