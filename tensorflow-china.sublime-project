@@ -1,0 +1,42 @@
+{
+  "folders":
+  [
+    {
+      "path": ".",
+      "folder_exclude_patterns": [".bundle",".idea","tmp",".capistrano","log","tmp",
+                                  "public/assets","coverage"],
+      "file_exclude_patterns": [".gitkeep","*.sublime-workspace",".byebug_history",".DS_Store"]
+    },
+    {
+      "path": "../oss/homeland-press",
+      "folder_exclude_patterns": [".bundle",".idea",".yardoc","log","tmp","pkg",".capistrano"],
+      "file_exclude_patterns": [".gitkeep","*.sublime-workspace","*.sqlite3*",".tags*",".gemtags",".DS_Store"]
+    },
+    {
+      "path": "../oss/homeland-jobs",
+      "folder_exclude_patterns": [".bundle",".idea",".yardoc","log","tmp","pkg",".capistrano"],
+      "file_exclude_patterns": [".gitkeep","*.sublime-workspace","*.sqlite3*",".tags*",".gemtags",".DS_Store"]
+    },
+    {
+      "path": "../oss/homeland-wiki",
+      "folder_exclude_patterns": [".bundle",".idea",".yardoc","log","tmp","pkg",".capistrano"],
+      "file_exclude_patterns": [".gitkeep","*.sublime-workspace","*.sqlite3*",".tags*",".gemtags",".DS_Store"]
+    },
+    {
+      "path": "../oss/homeland-note",
+      "folder_exclude_patterns": [".bundle",".idea",".yardoc","log","tmp","pkg",".capistrano"],
+      "file_exclude_patterns": [".gitkeep","*.sublime-workspace","*.sqlite3*",".tags*",".gemtags",".DS_Store"]
+    },
+    {
+      "path": "../oss/homeland-site",
+      "folder_exclude_patterns": [".bundle",".idea",".yardoc","log","tmp","pkg",".capistrano"],
+      "file_exclude_patterns": [".gitkeep","*.sublime-workspace","*.sqlite3*",".tags*",".gemtags",".DS_Store"]
+    }
+  ],
+  "settings":
+  {
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "tab_size": 2
+  }
+}

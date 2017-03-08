@@ -44,7 +44,7 @@ module Homeland
         - *倾斜* - `*倾斜*`
         - ~~删除线~~ - `~~删除线~~`
         - `Code 标记` - `\`Code 标记\``
-        - [超级链接](http://github.com) - `[超级链接](http://github.com)`
+        - [超级链接](https://tensorflow-china.org) - `[超级链接](https://tensorflow-china.org`
         - [username@gmail.com](mailto:username@gmail.com) - `[username@gmail.com](mailto:username@gmail.com)`
 
         ### 提及用户

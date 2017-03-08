@@ -9,6 +9,7 @@
 
 @import "bootstrap.min";
 @import "vars";
+@import "custom";
 
 @mixin clearfix() {
   &:before,
@@ -81,7 +82,7 @@ body {
   .navbar-default .navbar-nav>li>a  { color: #333; border-bottom: 3px solid #FFF; padding-bottom: 12px; }
   .navbar-default .navbar-nav>li>a:active { background-color: $grayDark; border-bottom-color: #999; }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider { color: #999 !important; }
-  .navbar-inverse .navbar-nav .open .dropdown-menu li.active a { border-bottom: 0px; color: $blue; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu li.active a { border-bottom: 0px; color: $ftgRed; }
   .navbar-inverse .navbar-toggle { color: #333; padding: 3px 9px; font-size: 18px; border:1px solid rgba(255,255,255,0.1); background-color: rgba(255,255,255,0.05); }
   .navbar-inverse .navbar-toggle:focus { background-color: rgba(255,255,255,0.05);}
   .navbar-inverse .navbar-toggle:hover { background-color: rgba(255,255,255,0.1); }
@@ -97,7 +98,7 @@ body {
   .navbar-nav {
     li.active a,
     li.active a:focus,
-    li.active a:hover { color: $blue; background: transparent; }
+    li.active a:hover { color: $ftgRed; background: transparent; }
   }
 
   #main-nav-menu {
@@ -107,7 +108,7 @@ body {
       li a:hover,
       li.active a,
       li.active a:focus,
-      li.active a:hover { border-bottom:3px solid $blue; color: $blue; background: transparent; padding-bottom: 12px;}
+      li.active a:hover { border-bottom:3px solid $ftgRed; color: $ftgRed; background: transparent; padding-bottom: 12px;}
     }
   }
 

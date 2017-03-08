@@ -33,6 +33,11 @@ module Homeland
         valid_video_url = true
       end
 
+      # Tencent
+      if node['src'].match?(%r{\A(?:https?:)?//(?:v\.)?qq\.com/})
+        valid_video_url = true
+      end
+
       return unless valid_video_url
 
       # We're now certain that this is a YouTube embed, but we still need to run

@@ -118,15 +118,25 @@ gem 'status-page'
 gem 'bundler-audit', require: false
 
 # Homeland Plugins
-gem 'homeland-press'
-gem 'homeland-jobs'
-gem 'homeland-wiki'
-gem 'homeland-note'
-gem 'homeland-site'
+# $ bundle config --local local.homeland-press /Users/guochunzhong/git/oss/homeland-press
+gem 'homeland-press', git: 'https://github.com/tensorflow-china/homeland-press.git', branch: :master
+# $ bundle config --local local.homeland-jobs /Users/guochunzhong/git/oss/homeland-jobs
+gem 'homeland-jobs', git: 'https://github.com/tensorflow-china/homeland-jobs.git', branch: :master
+# $ bundle config --local local.homeland-wiki /Users/guochunzhong/git/oss/homeland-wiki
+gem 'homeland-wiki', git: 'https://github.com/tensorflow-china/homeland-wiki.git', branch: :master
+# $ bundle config --local local.homeland-note /Users/guochunzhong/git/oss/homeland-note
+gem 'homeland-note', git: 'https://github.com/tensorflow-china/homeland-note.git', branch: :master
+# $ bundle config --local local.homeland-site /Users/guochunzhong/git/oss/homeland-site
+gem 'homeland-site', git: 'https://github.com/tensorflow-china/homeland-site.git', branch: :master
 
 gem 'sdoc', '~> 1.0.0.rc3'
 
 group :development do
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+  gem 'capistrano-sidekiq', require: false
+  gem 'capistrano3-puma'
   gem 'derailed'
   # Better Errors
   gem 'better_errors'

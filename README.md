@@ -1,5 +1,48 @@
-Homeland
+Homeland For Tensorflow-China
 --------
+
+## Running sidekiq
+
+```bash
+bundle exec sidekiq -C config/sidekiq.yml RAILS_ENV=development
+```
+
+## Export the DB
+
+```bash
+pg_dump -d tensorflow_china_prod -f tensorflow_china_prod_db.psql
+zip tensorflow_china_prod_db.zip tensorflow_china_prod_db.psql
+```
+
+## Import the staging DB
+
+```bash
+scp deploy@tensorflow-china.org:tensorflow_china_prod_db.zip .
+unzip tensorflow_china_prod_db.zip
+sed -i -- 's/deploy/guochunzhong/g' tensorflow_china_prod_db.psql
+psql -d postgres
+DROP DATABASE tensorflow_china_dev;
+CREATE DATABASE tensorflow_china_dev WITH ENCODING='UTF8' OWNER='guochunzhong';
+\q
+psql -d tensorflow_china_dev -f tensorflow_china_prod_db.psql
+```
+
+## Delete elasticsearch index
+
+```bash
+curl -XDELETE 'localhost:9200/tfchina_users?pretty&pretty'
+curl -XDELETE 'localhost:9200/tfchina_topics?pretty&pretty'
+curl -XDELETE 'localhost:9200/tfchina_pages?pretty&pretty'
+curl -XGET 'localhost:9200/_cat/indices?v&pretty' 
+```
+
+## Rebuild elasticsearch index
+
+```bash
+rake environment elasticsearch:import:model CLASS=Page FORCE=y RAILS_ENV=production
+rake environment elasticsearch:import:model CLASS=Topic FORCE=y RAILS_ENV=production
+rake environment elasticsearch:import:model CLASS=User FORCE=y RAILS_ENV=production
+```
 
 ![](https://gethomeland.com/images/text-logo.svg)
 
