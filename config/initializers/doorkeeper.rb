@@ -121,4 +121,4 @@ Doorkeeper.configure do
   realm Setting.app_name
 end
 
-Doorkeeper.configuration.token_grant_types << 'password'
+# Doorkeeper.configuration.token_grant_types << 'password'
