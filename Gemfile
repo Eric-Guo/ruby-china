@@ -119,15 +119,15 @@ gem 'bundler-audit', require: false
 
 # Homeland Plugins
 # $ bundle config --local local.homeland-press /Users/guochunzhong/git/oss/homeland-press
-gem 'homeland-press', git: 'https://github.com/tensorflow-china/homeland-press.git', branch: :master
+gem 'homeland-press', git: 'https://git.coding.net/ericguo/homeland-press.git', branch: :master
 # $ bundle config --local local.homeland-jobs /Users/guochunzhong/git/oss/homeland-jobs
-gem 'homeland-jobs', git: 'https://github.com/tensorflow-china/homeland-jobs.git', branch: :ftghub
+gem 'homeland-jobs', git: 'https://git.coding.net/ericguo/homeland-jobs.git', branch: :ftghub
 # $ bundle config --local local.homeland-wiki /Users/guochunzhong/git/oss/homeland-wiki
-gem 'homeland-wiki', git: 'https://github.com/tensorflow-china/homeland-wiki.git', branch: :master
+gem 'homeland-wiki', git: 'https://git.coding.net/ericguo/homeland-wiki.git', branch: :master
 # $ bundle config --local local.homeland-note /Users/guochunzhong/git/oss/homeland-note
-gem 'homeland-note', git: 'https://github.com/tensorflow-china/homeland-note.git', branch: :master
+gem 'homeland-note', git: 'https://git.coding.net/ericguo/homeland-note.git', branch: :master
 # $ bundle config --local local.homeland-site /Users/guochunzhong/git/oss/homeland-site
-gem 'homeland-site', git: 'https://github.com/tensorflow-china/homeland-site.git', branch: :master
+gem 'homeland-site', git: 'https://git.coding.net/ericguo/homeland-site.git', branch: :master
 
 
 gem 'sdoc', '~> 1.0.0.rc3'

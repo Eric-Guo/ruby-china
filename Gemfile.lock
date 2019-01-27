@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/tensorflow-china/homeland-jobs.git
+  remote: https://git.coding.net/ericguo/homeland-jobs.git
   revision: ad8a0b311e9cf1423ccd48b377312224d682ae1e
   branch: ftghub
   specs:
@@ -7,15 +7,15 @@ GIT
       rails (~> 5)
 
 GIT
-  remote: https://github.com/tensorflow-china/homeland-note.git
-  revision: d7a69f50836442847bea33cae805bdb828de3f89
+  remote: https://git.coding.net/ericguo/homeland-note.git
+  revision: f6c49da4a6e96e903c9ab11defedbec3a43a8585
   branch: master
   specs:
     homeland-note (0.2.0)
       rails (~> 5)
 
 GIT
-  remote: https://github.com/tensorflow-china/homeland-press.git
+  remote: https://git.coding.net/ericguo/homeland-press.git
   revision: 9b6a199c7db9e88d8271ce16cb629e2d8dd5b1d2
   branch: master
   specs:
@@ -23,15 +23,16 @@ GIT
       rails (~> 5)
 
 GIT
-  remote: https://github.com/tensorflow-china/homeland-site.git
-  revision: 4b9f88bf865812bcd2c526eb2f3a5a7d1a1bf448
+  remote: https://git.coding.net/ericguo/homeland-site.git
+  revision: bc4558cfaef8a334d68e9cd9e944e6ca01010185
   branch: master
   specs:
-    homeland-site (0.2.0)
+    homeland-site (0.2.1)
+      form-select (>= 0.2.0)
       rails (~> 5)
 
 GIT
-  remote: https://github.com/tensorflow-china/homeland-wiki.git
+  remote: https://git.coding.net/ericguo/homeland-wiki.git
   revision: d5925cb0e3b93a58523205b69b2d543e10acac22
   branch: master
   specs:
@@ -217,6 +218,8 @@ GEM
     ffi (1.10.0)
     font-awesome-rails (4.7.0.4)
       railties (>= 3.2, < 6.0)
+    form-select (0.3.2)
+      rails (>= 4.2)
     get_process_mem (0.2.3)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
