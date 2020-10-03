@@ -64,7 +64,7 @@ gem "exception-track"
 
 # Cache
 gem "redis"
-gem "redis-namespace", github: "resque/redis-namespace"
+gem "redis-namespace", github: "resque/redis-namespace", branch: :master
 gem "second_level_cache"
 
 # Setting
